@@ -137,10 +137,42 @@ function App() {
 
       </main>
 
-      <footer>
-        <p>Follow JobTrack</p>
-        <p>Ready to take control of your job search?</p>
-      </footer>
+    
+<footer className="homepage-footer">
+  <div className="footer-content">
+    <div className="footer-column">
+      <h2>JobTrack</h2>
+      <p>
+        Helping job seekers stay organised
+        throughout their career journey.
+      </p>
+    </div>
+
+    <div className="footer-column">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#resources">Resources</a>
+    </div>
+
+    <div className="footer-column">
+      <h3>Get Started</h3>
+      <p>Job Tracker</p>
+      <p>Sign up</p>
+      <p>Log in</p>
+    </div>
+
+    <div className="footer-column">
+      <h3>Connect</h3>
+      <p>Social links coming soon.</p>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <p>© 2026 JobTrack. All rights reserved.</p>
+  </div>
+</footer>
+
     </div>
   );
 }
