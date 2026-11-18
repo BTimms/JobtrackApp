@@ -52,3 +52,9 @@
   color: white;
   padding: 35px 7%;
 }
+
+.homepage h1,
+.homepage h2,
+.homepage h3 {
+  color: #10172e;
+}
