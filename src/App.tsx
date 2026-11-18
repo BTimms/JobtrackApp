@@ -86,13 +86,55 @@ function App() {
 
         </section>
 
-        <section id="features">
-          <h2>Features</h2>
-          <p>
-            Everything you need to stay organised
-            throughout your job search.
-          </p>
-        </section>
+       
+<section id="features" className="features-section">
+  <div className="features-heading">
+    <h2>Everything you need for your job search</h2>
+    <p>
+      Discover how JobTrack can help you organise
+      applications and manage your recruitment journey.
+    </p>
+  </div>
+
+  <div className="features-grid">
+    <article className="feature-card">
+      <div className="feature-icon">📋</div>
+      <h3>Application Tracking</h3>
+      <p>
+        Keep your job applications organised
+        and monitor their progress in one place.
+      </p>
+    </article>
+
+    <article className="feature-card">
+      <div className="feature-icon">🎯</div>
+      <h3>Recruitment Stages</h3>
+      <p>
+        Track each stage of recruitment, from
+        initial applications to final decisions.
+      </p>
+    </article>
+
+    <article className="feature-card">
+      <div className="feature-icon">📅</div>
+      <h3>Interview Management</h3>
+      <p>
+        Stay on top of upcoming interviews,
+        assessments and important deadlines.
+      </p>
+    </article>
+
+    <article className="feature-card">
+      <div className="feature-icon">📊</div>
+      <h3>Job Search Analytics</h3>
+      <p>
+        Understand your application activity
+        and identify trends in your job search.
+      </p>
+    </article>
+  </div>
+</section>
+
       </main>
 
       <footer>

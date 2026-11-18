@@ -215,3 +215,80 @@
     min-height: 250px;
   }
 }
+
+
+
+/* Homepage features section */
+
+.homepage .features-section {
+  padding: 80px 7%;
+  background-color: #f8fafc;
+}
+
+.homepage .features-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.homepage .features-heading h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.homepage .features-heading p {
+  font-size: 17px;
+  color: #526477;
+  line-height: 1.6;
+}
+
+.homepage .features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.homepage .feature-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px 22px;
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.homepage .feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(16, 23, 46, 0.08);
+}
+
+.homepage .feature-icon {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.homepage .feature-card h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.homepage .feature-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #526477;
+}
+
+@media (max-width: 1000px) {
+  .homepage .features-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homepage .features-heading h2 {
+    font-size: 28px;
+  }
+}
