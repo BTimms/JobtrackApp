@@ -365,3 +365,79 @@
     gap: 25px;
   }
 }
+
+
+/* Responsive homepage navigation */
+
+.homepage .homepage-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.homepage .homepage-logo {
+  color: #008c7a;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.homepage .homepage-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.homepage .homepage-auth {
+  display: flex;
+  gap: 12px;
+}
+
+.homepage .mobile-menu-toggle {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .homepage .homepage-header {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .homepage .mobile-menu-toggle {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    color: #10172e;
+    font-size: 28px;
+    padding: 8px 12px;
+  }
+
+  .homepage .homepage-nav,
+  .homepage .homepage-auth {
+    display: none;
+    width: 100%;
+  }
+
+  .homepage .homepage-nav.nav-open {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    order: 3;
+  }
+
+  .homepage .homepage-nav a {
+    padding: 14px 0;
+  }
+
+  .homepage .homepage-auth.auth-open {
+    display: flex;
+    order: 4;
+  }
+
+  .homepage .homepage-auth button {
+    flex: 1;
+  }
+}

@@ -1,23 +1,48 @@
-
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="homepage">
-      <header>
-        <h2>JobTrack</h2>
+     
+<header className="homepage-header">
+  <a href="#home" className="homepage-logo">
+    JobTrack
+  </a>
 
-        <nav>
-          <a href="#home">Job Tracker</a>
-          <a href="#resources">Resources</a>
-          <a href="#features">Features</a>
-        </nav>
+  <button
+    type="button"
+    className="mobile-menu-toggle"
+    aria-label={menuOpen ? "Close menu" : "Open menu"}
+    aria-expanded={menuOpen}
+    aria-controls="homepage-navigation"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    {menuOpen ? "✕" : "☰"}
+  </button>
 
-        <div>
-          <button>Log in</button>
-          <button>Sign up</button>
-        </div>
-      </header>
+  <nav
+    id="homepage-navigation"
+    className={`homepage-nav ${menuOpen ? "nav-open" : ""}`}
+    aria-label="Main navigation"
+  >
+    <a href="#home" onClick={() => setMenuOpen(false)}>
+      Job Tracker
+    </a>
+    <a href="#resources" onClick={() => setMenuOpen(false)}>
+      Resources
+    </a>
+    <a href="#features" onClick={() => setMenuOpen(false)}>
+      Features
+    </a>
+  </nav>
+
+  <div className={`homepage-auth ${menuOpen ? "auth-open" : ""}`}>
+    <button type="button">Log in</button>
+    <button type="button">Sign up</button>
+  </div>
+</header>
 
       <main>
         <section id="home" className="hero">
