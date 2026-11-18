@@ -98,18 +98,99 @@
   margin: 0;
 }
 
+
 .homepage .hero-video {
+  display: block;
   min-height: 320px;
-  padding: 30px;
-  border: 2px dashed #b8d8d2;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
-  background: #f2faf8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  box-shadow: 0 12px 35px rgba(16, 23, 46, 0.08);
+  text-align: left;
 }
+
+.homepage .preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.homepage .preview-header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.homepage .preview-badge {
+  background: #e0f5ef;
+  color: #008c7a;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.homepage .preview-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.homepage .preview-stat {
+  background: #f3f7f8;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.homepage .preview-stat p {
+  font-size: 12px;
+  color: #526477;
+  margin: 0 0 8px;
+}
+
+.homepage .preview-stat strong {
+  font-size: 26px;
+  color: #008c7a;
+}
+
+.homepage .preview-applications h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.homepage .preview-application {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+
+.homepage .preview-status {
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.homepage .preview-status.interview {
+  background: #e0f5ef;
+  color: #087e73;
+}
+
+.homepage .preview-status.applied {
+  background: #e6edff;
+  color: #3454a5;
+}
+
+.homepage .preview-status.assessment {
+  background: #fff0d9;
+  color: #996000;
+}
+
 
 .homepage .hero-video h2 {
   font-size: 24px;
