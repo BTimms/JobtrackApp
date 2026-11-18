@@ -20,8 +20,9 @@ function App() {
       </header>
 
       <main>
-        <section id="home">
-          <h1>
+        <section id="home" className="hero">
+          <div className="hero-content">
+            <h1>
             Track, manage and achieve your
             career goals with JobTrack.
           </h1>
@@ -30,12 +31,15 @@ function App() {
             A simple and organised way to track your
             job applications, interviews and
             recruitment progress.
-          </p>
+            </p>
 
-          <button>Get Started</button>
-          <button>Learn More</button>
-
-          <div>
+            <div className="hero-buttons">
+               <button type="button">Get Started</button>
+               <button type="button">Learn More</button>
+            </div>
+          </div>
+          
+          <div className="hero-video">
             <h2>Interactive Video</h2>
             <p>Dashboard demonstration coming soon.</p>
           </div>
